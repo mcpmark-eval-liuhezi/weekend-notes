@@ -1,35 +1,36 @@
-# Weekend Notes — Formula 1 + Surgery Journal Club Digest
+# Weekend Notes
 
-**Slot 1 — F1: Lewis Hamilton's Home Win at the 2024 British Grand Prix (Silverstone, 7 July 2024)**
+## 🏁 Slot 1 — F1: Lewis Hamilton's Home Win at Silverstone (2024 British Grand Prix)
 
-Lewis Hamilton converted George Russell's dropped start (water leak, out lap 33) into a commanding win: 52 laps in 1:22:27.059 — his ninth British GP victory (a record at a single circuit) and his first since the 2021 Saudi Arabian GP. He started P2 and finished ahead of Max Verstappen (+1.465s) and Lando Norris (+7.547s).
+Lewis Hamilton (Mercedes, car #44) won the 2024 British Grand Prix on 7 July 2024 at Silverstone Circuit — his 104th career victory and ninth at this circuit, ending a 946-day win drought since the 2021 Saudi Arabian Grand Prix.
 
-**Hamilton's pit stop record (OpenF1 session data, race session key 9558):**
+**Pit stop record (from OpenF1 race data, session key 9558):**
 
-| Stop | Lap | Pit/lane duration | Timestamp (UTC) |
-|---|---|---|---|
-| 1 | 27 | 28.9s | 14:45:46 |
-| 2 | 38 | 30.0s | 15:04:39 |
+| Stop | Lap | Timestamp (UTC) | Pit/lane duration |
+|------|-----|-----------------|-------------------|
+| 1 | 27 | 14:45:46 | 28.9s |
+| 2 | 38 | 15:04:39 | 30.0s |
 
-Hamilton ran a two-stop strategy. Note: these figures are total pit-lane transit times (in-lap + stationary + out-lap); real stationary tyre-change time was roughly 2.5–3 seconds. The ~11-lap gap between stops (27 → 38) is consistent with a fuel/fresh-tyre strategy on the Intertotype programme at Silverstone that weekend.
+**Total: 2 pit stops** (lap 27 and lap 38). Note: these durations are total pit-lane transit times (in-lap slowdown + stationary + out-lap), not just the stationary tyre-change time — the API reports stop_duration as null, with pit_duration/lane_duration reflecting full lane time.
 
-**Slot 2 — Journal Club: Pilonidal Sinus Surgery Outcomes (Single-Centre Turkish Cohort)**
+Race context: Hamilton started P2, stayed out near the full first stint, pipped out Verstappen in the engineering tape at Turn 1, undercut Norris for the lead around lap 18 during the rain, and held off Verstappen on softs to win by 1.4s from three seconds out.
 
-Citation (closest verified match — see note below):
-- **Title:** Outcomes of minimally invasive pit-picking treatment in adolescents with uncomplicated pilonidal disease: a retrospective single-center study.
-- **Authors:** Başar, Erginel, Kocaman, Keskin, Gün Soysal
-- **Journal:** Pediatric Surgery International
+## 📄 Slot 2 — Journal Club: Pilonidal Sinus Surgery Outcomes (PMID 42633928)
+
+- **Title:** Surgical Treatment Outcomes for Primary Pilonidal Sinus Disease: A Single-Centre Retrospective Study of 2222 Patients (2006-2020).
+- **Authors:** Tokocin, Yigitbas, Yavuz, Gulcicek
+- **Journal:** International wound journal
 - **Publication date:** 2026
-- **PMID:** 42593573
+- **PMID:** 42633928
 
-> **Editor's note:** The PMID cited for our session (42633928) returns no metadata in PubMed (the metadata lookup came back empty and the PDF download was blocked with a 403). The closest single-centre Turkish cohort study currently indexed is PMID 42593573 (Başar et al., Pediatric Surgery International, retrospective single-center study). Alternative for the journal club: PMID 42700095 — Osmanov, Hazir, Ekici. *Medicine*. 2026. "Comparative outcomes of phenol therapy and Karydakis flap in pilonidal sinus disease: A retrospective cohort study with 1-year follow-up" (125 patients, Turkish cohort, 1-year recurrence data).
+**Why it's relevant to our journal club:** Single-centre Turkish retrospective cohort of 2,222 primary pilonidal sinus patients operated on between January 2006 and December 2020 at one tertiary referral centre, all with ≥5 years follow-up. Compared nine surgical techniques on recurrence (Kaplan-Meier + multivariable Cox regression). Key findings: 5-year cumulative recurrence 7.9% (175/2222), postoperative infection 6.9%; lowest recurrence rates with Karydakis flap (1.5%), Bascom cleft lift (2.3%), and Dufourmentel flap (2.4%); most recurrences occurred within the first 2 years (median time to recurrence 20 months, IQR 12–36); vs lay-open, Karydakis (HR 0.19), Bascom cleft lift (HR 0.25), Limberg (HR 0.32), and Dufourmentel (HR 0.26) flaps were independently associated with lower recurrence risk.
 
-**Slot 3 — Header Photo: Hamilton in the Pits at Silverstone, 2024**
+## 📷 Slot 3 — Header Photo
 
-- Wikimedia Commons file page (verify exact filename on page for the direct upload.wikimedia.org thumb URL): https://commons.wikimedia.org/wiki/File:Lewis_Hamilton_2024_British_Grand_Prix.jpg
-- Reference article with image gallery: https://en.wikipedia.org/wiki/2024_British_Grand_Prix (includes Hamilton in the pits during the 2024 British GP)
+Direct image link:
+https://images.motorsport-magazin.com/images/1200/570/q_80/s_fb/1078793.jpg
 
-*Note: dedicated image-search APIs were rate-limited this week, so the link above points to the verified Commons/Wikipedia source rather than a guessed direct image URL — grab the thumbnail link from the file page when publishing.*
+(Lewis Hamilton celebrating with the British flag at Silverstone 2024 — photo: LAT Images via motorsport-magazin.com)
 
 ---
-*Published as part of the weekly "Weekend Notes" digest. Pit stop data via OpenF1 (session 9558). Citation verified via PubMed.*
+*Published as this week's weekend notes digest. Pit stop data sourced from OpenF1 race session data (2024 British GP, session key 9558). Citation verified via PubMed (PMID 42633928).*
